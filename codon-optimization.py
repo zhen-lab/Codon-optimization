@@ -192,9 +192,9 @@ if insertEnhancer:
 # Check that protein sequence did not change.
 if sequence != translate(sequenceWorm.replace(intron, '').replace(enhancer, '')):
     print 'ERROR: protein sequence changed! Something is wrong with the script!'
-
-print '---\nFinal sequence:'
-print re.sub(r'(.{10})', r'\1 ', sequenceWorm)
+else:
+    print '---\nFinal sequence:'
+    print re.sub(r'(.{10})', r'\1 ', sequenceWorm)
 
 
 
